@@ -1,1 +1,19 @@
 #Ymonni Simms 2106646
+
+num1 = int(input())
+num2 = int(input())
+ans1 = int(input())
+
+num3 = int(input())
+num4 = int(input())
+ans2 = int(input())
+
+check_solution = False
+for x in range(-10, 10, 1):
+    for y in range(-10, 10, 1):
+        if (num1 * x) + (num2 * y) == ans1 and (num3 * x) + (num4 * y) == ans2:
+            check_solution = True
+            print(x, y)
+
+if check_solution == False:
+    print('No solution')
